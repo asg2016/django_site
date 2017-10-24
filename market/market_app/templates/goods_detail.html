@@ -4,7 +4,7 @@
 <section id="content">
     <div class="content-wrapper">
         <div class="content-fluid">
-            {% for entry in entries %}
+
                 <div class="row">
                     <div class="col-md-6">
                         <h2>
@@ -20,7 +20,7 @@
                 </div>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/static/img/{{ entry.img_path }}" class="img-responsive" alt="">
+                    <img src="/static/img/{{ entry.image }}" class="img-responsive" alt="">
                 </div>
                 <div class="col-md-4">
                         <ul>
@@ -57,7 +57,7 @@
                     <button class="btn btn-warning">В корзину</button>
                 </div>
             </div>
-            {% endfor %}
+
         </div>
     </div>
 </section>

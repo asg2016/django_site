@@ -16,7 +16,7 @@ class Goods(models.Model):
     bluetooth = models.BooleanField(default=True)
     wifi = models.BooleanField(default=True)
     price = models.FloatField(default=0)
-    image = models.FilePathField(null=True, blank=True)
+    image = models.TextField(null=True, blank=True)
 
     def get_absolute_url(self):
         return '/detail/%i' % self.id

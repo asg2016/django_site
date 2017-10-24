@@ -3,11 +3,12 @@
 <section id="content">
     <div class="content-wrapper">
         <div class="content-fluid">
+            {% for entry in entries %}
                 <div class="row">
                     <div class="col-md-4">
                         <center>
                         <a href="{% url 'detail_goods' entry.id %}">
-                            <img src="/static/img/{{ entry.img_path }}" class="img-responsive" alt="" width="190">
+                            <img src="/static/img/{{ entry.image }}" class="img-responsive" alt="" width="190">
                         </a>
                         </center>
                     </div>
@@ -27,6 +28,7 @@
                         <h4>{{ entry.price }}</h4>
                     </div>
                 </div>
+            {% endfor %}
         </div>
     </div>
 </section>
