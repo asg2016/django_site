@@ -17,3 +17,6 @@ class Goods(models.Model):
     wifi = models.BooleanField(default=True)
     price = models.FloatField(default=0)
     image = models.FilePathField(null=True, blank=True)
+
+    def get_absolute_url(self):
+        return '/detail/%i' % self.id
